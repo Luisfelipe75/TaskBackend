@@ -13,6 +13,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="15.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\TaskBackend.Domain\TaskBackend.Domain.csproj" />
     <ProjectReference Include="..\TaskBackend.Infrastucture\TaskBackend.Infrastucture.csproj" />
   </ItemGroup>
