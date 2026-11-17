@@ -157,9 +157,7 @@ public class TasksController : ControllerBase
 
     // PUT: api/tasks/1
     [HttpPut("{id:int}")]
-    public async Task<IActionResult> UpdateTask(
-        int id,
-        UpdateTaskDto dto)
+    public async Task<IActionResult> UpdateTask(int id, UpdateTaskDto dto)
     {
         var task = await _context.Tasks
             .FirstOrDefaultAsync(t => t.Id == id);

@@ -16,8 +16,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TaskBackend.Business\TaskBackend.Business.csproj" />
     <ProjectReference Include="..\TaskBackend.Domain\TaskBackend.Domain.csproj" />
+    <ProjectReference Include="..\TaskBackend.Infrastucture\TaskBackend.Infrastucture.csproj" />
   </ItemGroup>
 
 </Project>

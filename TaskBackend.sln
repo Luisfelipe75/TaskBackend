@@ -1,15 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36930.0 d17.14
+VisualStudioVersion = 17.14.36930.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskBackend.API", "TaskBackend.API\TaskBackend.API.csproj", "{6EB4F708-FAF3-4A3A-AB74-D2353C6F9C16}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskBackend.Infrastucture", "TaskBackend.Infrastucture\TaskBackend.Infrastucture.csproj", "{129391F2-3EC2-412B-8B54-F9BBDAB3EA53}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskBackend.Domain", "TaskBackend.Domain\TaskBackend.Domain.csproj", "{AEEFC4C7-C548-4026-A885-28FCAB6026F5}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskBackend.Business", "TaskBackend.Business\TaskBackend.Business.csproj", "{8A0B1B70-25F2-4252-BF7A-04EEA515A9DC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskBackend.API.Tests", "TaskBackend.API.Test\TaskBackend.API.Tests.csproj", "{58358D66-4CD9-4F13-9283-7F8F33C07DFE}"
 EndProject
@@ -31,10 +29,6 @@ Global
 		{AEEFC4C7-C548-4026-A885-28FCAB6026F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEEFC4C7-C548-4026-A885-28FCAB6026F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEEFC4C7-C548-4026-A885-28FCAB6026F5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8A0B1B70-25F2-4252-BF7A-04EEA515A9DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8A0B1B70-25F2-4252-BF7A-04EEA515A9DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8A0B1B70-25F2-4252-BF7A-04EEA515A9DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8A0B1B70-25F2-4252-BF7A-04EEA515A9DC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{58358D66-4CD9-4F13-9283-7F8F33C07DFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{58358D66-4CD9-4F13-9283-7F8F33C07DFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58358D66-4CD9-4F13-9283-7F8F33C07DFE}.Release|Any CPU.ActiveCfg = Release|Any CPU

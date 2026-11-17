@@ -1,6 +1,5 @@
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json.Serialization;
-using TaskBackend.Business.Mapping;
 using TaskBackend.Infrastucture.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,6 +16,9 @@ builder.Services.AddControllers()
     // sean descubiertos por el sistema de endpoints y, por ende, por Swagger.
     .AddApplicationPart(typeof(Program).Assembly);
 
+//Garantiza que las routas se interpreten en minusculas en el navegador
+builder.Services.AddRouting(routing => routing.LowercaseUrls = true);
+
 // Configuración de Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -29,14 +31,11 @@ builder.Services.AddDbContext<TaskDbContext>(options =>
     )
 );
 
-//AutoMapper
-builder.Services.AddAutoMapper(cfg => { }, typeof(TaskMappingProfile));
-
 
 var app = builder.Build();
 
 app.UseExceptionHandler();
-app.UseStaticFiles();
+
 // Habilitar Swagger en entornos de desarrollo 
 if (app.Environment.IsDevelopment())
 {

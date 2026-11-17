@@ -96,7 +96,7 @@ public class TasksTestController
                 Title = "Hecha",
                 Description = "Descripción",
                 States = TaskStates.Hecha,
-                Responsible = "Luis",
+                Responsible = "Luis Felipe",
                 DueDate = DateTime.UtcNow.AddDays(3)
             }
         );

@@ -48,13 +48,13 @@ public class TaskDbContext : DbContext
             entity.HasIndex(t => t.DueDate); // Índice para búsquedas por fecha de vencimiento
         });
 
-        // Seed data para probar
+        // Semilla de datos para probar
         modelBuilder.Entity<TaskItem>().HasData(
             new TaskItem
             {
                 Id = 1,
                 Title = "Configurar entorno de desarrollo",
-                Description = "Instalar .NET SDK, Visual Studio, SQL Server, etc.",
+                Description = "Instalar .NET SDK, Visual Studio, SQLite, etc.",
                 States = Domain.Enums.TaskStates.Pendiente,
                 Responsible = "Juan Pérez",
                 DueDate = new DateTime(2026, 12, 01),
